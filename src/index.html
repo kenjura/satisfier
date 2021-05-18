@@ -1,0 +1,221 @@
+<button onclick="addPart()">Add Part</button>
+
+<div id="parts"></div>
+
+<button onclick="calculate()">Calculate</button>
+
+<!-- <textarea id="output"></textarea> -->
+<div id="output"></div>
+
+<style>
+body {
+	font-family: sans-serif;
+}
+#output {
+	/*background: gray;*/
+	/*height: 20em;*/
+	/*width: 40em;*/
+}
+.building {
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 1em;
+    padding: 1em;
+    position: relative;
+}
+
+.building-qty {
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    /* font-weight: bold; */
+}
+
+.building-recipe {
+    display: inline-block;
+}
+</style>
+
+<script type="module">
+
+import getAllParts from '/model/getAllParts.js';
+import cloneDeep from '/helper/cloneDeep.js';
+
+
+const allParts = getAllParts();
+const parts = [];
+
+
+function addPart() {
+	parts.push({ id:parts.length, Recipe:'' });
+	renderParts();
+}
+
+function renderParts() {
+	const recipeNames = allParts.map(part => part.Recipe);//.sort((a,b) => String(a.Recipe) > String(b.Recipe) ? 1 : -1);
+
+	const partsHtml = parts.map(part => `
+		<div class="part" part-id="${part.id}">
+			<select onchange="changePart('${part.id}', event.target.value)">
+				<option>Choose a part</option>
+				${recipeNames.map(recipeName => `
+					<option${recipeName===part.Recipe?' selected':''}>${recipeName}</option>
+				`).join('')}
+			</select>
+			Quantity: 1
+		</div>
+	`).join('');
+
+	document.getElementById('parts').innerHTML = partsHtml;
+}
+
+function changePart(partId, value) {
+	const part = parts.find(part => String(part.id) === partId);
+	if (!part) throw new Exception('cannot find part to change');
+
+	part.Recipe = value;
+	part.buildingQty = 1;
+}
+
+function getPart(Recipe) {
+	return allParts.find(part => part.Recipe === Recipe); // todo: use a map instead
+}
+
+function calculate() {
+	// parts.forEach(part => part.shoppingList = getShoppingList(part.Recipe, 1) );
+
+	// let buildingList = parts.map(part => Object.assign({}, part, getPart(part.Recipe)));
+	let buildingList = cloneDeep(parts);
+	for (let depth = 0; depth < 10; depth++) {
+		buildingList.forEach(building => {
+			if (building.processed) return;
+
+			const part = getPart(building.Recipe);//allParts.find(part => part.Recipe === building.Recipe);
+			if (!part) throw new Error(`required part "${building.Recipe}" does not exist in dataset`);
+
+			const subParts = [
+				{ Recipe:part['Item 1'], outputQtyPerParentBuilding:Number(part['Q1']) },
+				{ Recipe:part['Item 2'], outputQtyPerParentBuilding:Number(part['Q2']) },
+				{ Recipe:part['Item 3'], outputQtyPerParentBuilding:Number(part['Q3']) },
+				{ Recipe:part['Item 4'], outputQtyPerParentBuilding:Number(part['Q4']) },
+			]
+
+			const parentBuildingQty = building.buildingQty;
+
+			subParts.forEach(sp => {
+				if (!sp.Recipe) return;
+				const subPart = allParts.find(part => part.Recipe === sp.Recipe);
+				if (!subPart) return;
+
+				const quantityOfSubPartNeeded = parentBuildingQty * sp.outputQtyPerParentBuilding;
+				const quantityOfSubPartPerBuilding = Number(subPart['Output qty/min']);
+				const quantityOfSubPartBuildingsNeeded = quantityOfSubPartNeeded / quantityOfSubPartPerBuilding;
+
+				buildingList.push({
+					Recipe: subPart.Recipe,
+					buildingQty: quantityOfSubPartBuildingsNeeded,
+				})
+			});
+
+			building.processed = true;
+		});
+	}
+
+	// dedupe
+	let buildingListMap = {};
+	buildingList.forEach(building => {
+		buildingListMap[building.Recipe] = { Recipe:building.Recipe };
+	})
+	for (let buildingRecipe in buildingListMap) {
+		if (!buildingListMap.hasOwnProperty(buildingRecipe)) continue;
+
+		let buildingsWithRecipe = buildingList.filter(building => building.Recipe === buildingRecipe);
+		let totalBuildingQty = buildingsWithRecipe.reduce((p,c) => c.buildingQty + p, 0);
+
+		buildingListMap[buildingRecipe].buildingQty = totalBuildingQty;
+	}
+	
+	// document.getElementById('output').value = JSON.stringify(parts);
+	// document.getElementById('output').value = JSON.stringify(buildingListMap);
+	renderOutput(Object.values(buildingListMap));
+}
+
+function renderOutput(buildingList) {
+
+	const lines = buildingList.map(building => renderLine(building)).join('');
+
+	const outputHtml = `<div class="building-list">${lines}</div>`;
+	document.getElementById('output').innerHTML = outputHtml;
+
+	function renderLine(building) {
+		return `
+			<div class="building">
+				<div class="building-recipe">${building.Recipe}</div>
+				<div class="building-qty">${building.buildingQty}</div>
+			</div>
+		`;
+	}
+}
+
+// function getShoppingList(recipeName, buildingQty) {
+// 	if (recipeName === '') return null;
+// 	const part = allParts.find(allPart => allPart.Recipe === recipeName);
+// 	const outputQty = Number(part['Output qty/min']) * Number(buildingQty);
+
+// 	function getSubPart(recipeName, subPartQtyPerParentBuilding, parentBuildingQty) {
+// 		if (!recipeName) return null;
+
+// 		const subPart = allParts.find(allPart => allPart.Recipe === recipeName);
+
+// 		const quantityOfSubPartNeeded = parentBuildingQty * subPartQtyPerParentBuilding;
+// 		const quantityOfSubPartPerBuilding = Number(subPart['Output qty/min']);
+// 		const quantityOfSubPartBuildingsNeeded = quantityOfSubPartNeeded / quantityOfSubPartPerBuilding;
+
+// 		const subPartShoppingList = getShoppingList(recipeName, quantityOfSubPartBuildingsNeeded);
+
+// 		return {
+// 			recipeName,
+// 			outputQty: quantityOfSubPartNeeded,
+// 			buildingQty: quantityOfSubPartBuildingsNeeded,
+// 			shoppingList: subPartShoppingList,
+// 		}
+// 	}
+
+// 	const subPart1 = getSubPart(part['Item 1'], Number(part['Q1']), buildingQty);
+// 	const subPart2 = getSubPart(part['Item 2'], Number(part['Q2']), buildingQty);
+// 	const subPart3 = getSubPart(part['Item 3'], Number(part['Q3']), buildingQty);
+// 	const subPart4 = getSubPart(part['Item 4'], Number(part['Q4']), buildingQty);
+
+// 	// function formatSubPart(subPart) {
+// 	// 	return {
+// 	// 		recipeName: subPart.Recipe,
+// 	// 		quantity: subPart.qty * buildingQty,
+// 	// 		shoppingList: subPart.shoppingList,
+// 	// 	}
+// 	// }
+
+// 	// const shoppingList = [];
+// 	// if (subPart1) shoppingList.push(formatSubPart(subPart1));
+// 	// if (subPart2) shoppingList.push(formatSubPart(subPart2));
+// 	// if (subPart3) shoppingList.push(formatSubPart(subPart3));
+// 	// if (subPart4) shoppingList.push(formatSubPart(subPart4));
+
+// 	return {
+// 		Recipe: recipeName,
+// 		//qty: Number(qty),// * Number(part['Output qty/min']),
+// 		outputQty,
+// 		buildingQty,
+// 		// shoppingList,
+// 		subPart1,
+// 		subPart2,
+// 		subPart3,
+// 		subPart4,
+// 	}
+// }
+
+
+window.addPart = addPart;
+window.calculate = calculate;
+window.changePart = changePart;
+
+</script>
