@@ -1,7 +1,34 @@
-import allParts from '/data/parts.js';
-import cloneDeep from '/helper/cloneDeep.js';
+import allParts from '../data/parts.js';
+import cloneDeep from '../helper/cloneDeep.js';
+
+let cached = {
+	allParts: null,
+	allPartsMap: null,
+};
+
+export function getPart(Recipe) {
+	const map = getPartsMap();
+	return map[Recipe];
+}
+
+function createPartsMap(parts) {
+	const map = {};
+	parts.forEach(part => {
+		map[part.Recipe] = part;
+	})
+	return map;
+}
+
+function getPartsMap() {
+	if (cached.allPartsMap) return cached.allPartsMap;
+
+	const map = createPartsMap(getAllParts());
+	cached.allPartsMap = map;
+	return map;
+}
 
 export default function getAllParts() {
+	if (cached.allParts) return cached.allParts;
 	const cloned = cloneDeep(allParts);
 	const mapped = cloned
 		.map(part =>  {
@@ -21,6 +48,6 @@ export default function getAllParts() {
 			if (b.Recipe > a.Recipe) return -1;
 			return 0;
 		});
-
+	cached.allParts = sorted;
 	return sorted;
 }
