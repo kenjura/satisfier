@@ -1,6 +1,8 @@
 
 # exp/react
 - [ ] move html and css to src (eww, dist)
+- [ ] bugs:
+  - [ ] calculate, then change qty, then recalculate: sometimes base buildings get weird sum
 
 
 # 0.2.0a
@@ -20,6 +22,7 @@
 
 
 # Some day
+- Clean up data (e.g. capital letters, weird field names)
 - Tests?
 - Allow other forms of optimization (e.g. power, buildings, etc)
 - Allow selection of miner and logistic tech level
