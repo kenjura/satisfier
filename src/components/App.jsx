@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PartList from './PartList.jsx';
+import AlternateRecipeList from './AlternateRecipeList.jsx';
 import BuildingList from './BuildingList.jsx';
 import uid from '../helper/uid.js';
 
@@ -13,6 +14,8 @@ export default function App(props) {
 		<PartList />
 
 		<BuildingList buildingList={[]} />
+
+		<AlternateRecipeList />
 
 		<StateDump />
 	</div>

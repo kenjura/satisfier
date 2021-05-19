@@ -1,24 +1,27 @@
-# 0.3.0
-- [ ] move html and css to src (eww, dist)
-- [ ] bugs:
-  - [ ] calculate, then change qty, then recalculate: sometimes base buildings get weird sum
-- [ ] fill out README
-- [ ] clean code:
-  - [ ] wrap each part in a class to ensure Number() on getter, etc
-    - [ ] or just process them on input
-  - [ ] model is just...messy
-
-
-# 0.4.0
-- [ ] Allow selection of alternate recipes
-- [ ] Optimize for base resource usage, based on alternate recipes
+# Features
 - [ ] Support byproducts
+- [ ] Allow other forms of optimization (e.g. power, buildings, etc)
+- [ ] Allow selection of miner and logistic tech level
+- [ ] Allow selection of available buildings
+- [ ] Power analysis
+- [ ] Building diagram
+- [ ] User preferences (remember my tech level, buildings, alt recipes, etc) based on profile
 
+# Bugs
+- [ ] calculate, then change qty, then recalculate: sometimes base buildings get weird sum
 
-# Some day
-- Clean up data (e.g. capital letters, weird field names)
-- Tests?
-- Allow other forms of optimization (e.g. power, buildings, etc)
-- Allow selection of miner and logistic tech level
-- Draw diagram
-- Clean code
+# UX
+- [ ] Improve it
+
+# Clean Code
+- [ ] fill out README
+- [ ] move html and css to src (eww, dist)
+- [ ] implement component-specific CSS
+- [ ] wrap each part in a class to ensure Number() on getter, etc
+	- [ ] or just process them on input
+- [ ] Clean up data (e.g. capital letters, weird field names)
+- [ ] model is just...messy
+	- [ ] no function should be default
+	- [ ] add helpers like getAlternateRecipes
+	- [ ] digest data into clean property names, use those in all code
+- [ ] Tests?

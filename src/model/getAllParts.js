@@ -4,7 +4,16 @@ import cloneDeep from '../helper/cloneDeep.js';
 let cached = {
 	allParts: null,
 	allPartsMap: null,
+	alternateRecipes: null,
 };
+
+export function getAlternateRecipes() {
+	if (cached.alternateRecipes) return cached.alternateRecipes;
+	const allParts = getAllParts();
+	const alternateRecipes = allParts.filter(part => part.alternate);
+	cached.alternateRecipes = alternateRecipes;
+	return alternateRecipes;
+}
 
 export function getPart(Recipe) {
 	const map = getPartsMap();
@@ -39,7 +48,8 @@ export default function getAllParts() {
 			part.Q4 = Number(part.Q4);
 			part.QB = Number(part.QB);
 			part.Stage = Number(part.Stage);
-
+			part.alternate = part.Alternate.toLowerCase() === 'yes';
+			part.altScore = Number(part['Alt Score']);
 			return part;
 		});
 	const sorted = mapped

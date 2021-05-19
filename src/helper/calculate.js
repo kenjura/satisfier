@@ -1,8 +1,10 @@
 import cloneDeep from './cloneDeep';
-import { getPart } from '../model/getAllParts';
+import { getAlternateRecipes, getPart } from '../model/getAllParts';
 import uid from './uid';
 
-export default function calculate(parts) {
+const alternateRecipes = getAlternateRecipes();
+
+export default function calculate(parts, enabledAlts) {
 	// parts.forEach(part => part.shoppingList = getShoppingList(part.Recipe, 1) );
 
 	// let buildingList = parts.map(part => Object.assign({}, part, getPart(part.Recipe)));
@@ -32,12 +34,20 @@ export default function calculate(parts) {
 				const subPart = getPart(sp.Recipe);
 				if (!subPart) return;
 
+				// is there a better part? check alt recipes
+				const altRecipes = alternateRecipes
+					.filter(recipe => recipe.Output === subPart.Output)
+					.filter(recipe => enabledAlts[recipe.Recipe]);
+				const finalRecipe = altRecipes.length
+					? altRecipes.sort((a,b) => b.altScore - a.altScore)[0]
+					: subPart;
+
 				const quantityOfSubPartNeeded = parentBuildingQty * sp.outputQtyPerParentBuilding;
-				const quantityOfSubPartPerBuilding = Number(subPart['Output qty/min']);
+				const quantityOfSubPartPerBuilding = Number(finalRecipe['Output qty/min']);
 				const quantityOfSubPartBuildingsNeeded = quantityOfSubPartNeeded / quantityOfSubPartPerBuilding;
 
 				buildingList.push({
-					Recipe: subPart.Recipe,
+					Recipe: finalRecipe.Recipe,
 					buildingQty: quantityOfSubPartBuildingsNeeded,
 				})
 			});

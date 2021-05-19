@@ -13,3 +13,9 @@
 - [x] Top-level quantities are now changeable
 - [x] getPart() now uses a cached map, not a find() every time
 - [x] switched to semver to make npm happy
+
+# 0.3.0
+- [x] Allow selection of alternate recipes
+- [x] Optimize for base resource usage, based on alternate recipes
+- [x] Implemented alt recipe ranking based on <https://www.reddit.com/r/SatisfactoryGame/comments/mnwugx/update_4_alternate_recipe_indepth_analysis/>
+- [x] Reformatted TODO.md

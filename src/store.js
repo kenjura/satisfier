@@ -28,7 +28,7 @@ const useStore = create(set => ({
   }),
   calculate: () => set(state => {
   	return produce(state, draft => {
-  		const newBuildings = calculate(state.parts);
+  		const newBuildings = calculate(state.parts, state.enabledAlts);
   		draft.buildings = newBuildings;
   	});
   }),
@@ -36,6 +36,12 @@ const useStore = create(set => ({
   	'Heavy Modular Frames': { uid:123, Recipe:'Heavy Modular Frames', buildingQty:3 },
   	'Computer': { uid:456, Recipe:'Computer', buildingQty:33 },
   },
+  enabledAlts: { 'Heavy Encased Frame':true },
+  setEnabledAlt: (recipe, value) => set(state => {
+    return produce(state, draft => {
+      draft.enabledAlts[recipe] = value;
+    });
+  }),
   dump: () => JSON.stringify(state),
 }))
 
