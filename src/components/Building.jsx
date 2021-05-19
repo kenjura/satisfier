@@ -1,4 +1,4 @@
-import React, { useState } from 'https://unpkg.com/es-react/dev';
+import React, { useState } from 'react';
 
 
 export default function Building(props) {

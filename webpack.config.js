@@ -8,7 +8,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ['babel-loader']
       },
     ],
   },
@@ -20,6 +20,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
+  devtool: 'eval-source-map',
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
     hot: true,

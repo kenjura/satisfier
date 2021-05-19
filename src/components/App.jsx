@@ -1,6 +1,6 @@
-import React, { useState } from 'https://unpkg.com/es-react/dev';
-import PartList from '/components/PartList.jsx';
-import BuildingList from '/components/BuildingList.jsx';
+import React, { useState } from 'react';
+import PartList from './PartList.jsx';
+import BuildingList from './BuildingList.jsx';
 
 let parts = [];
 let buildingList = [];
@@ -15,7 +15,11 @@ export default function App(props) {
 	</div>
 
 	function addPart() {
-		const newPart = { id:parts.length, Recipe:'' };
+		const newPart = { id:parts.length, Recipe:'', changePart };
 		setParts(parts.concat(newPart));
+	}
+
+	function changePart(a,b,c) {
+		console.log({a,b,c});
 	}
 }

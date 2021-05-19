@@ -1,5 +1,5 @@
-import React, { useState } from 'https://unpkg.com/es-react/dev';
-import Building from '/components/Building.jsx';
+import React, { useState } from 'react';
+import Building from './Building.jsx';
 
 
 export default function BuildingList(props) {

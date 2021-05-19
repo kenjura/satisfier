@@ -1,5 +1,5 @@
-import allParts from '/data/parts.js';
-import cloneDeep from '/helper/cloneDeep.js';
+import allParts from '../data/parts.js';
+import cloneDeep from '../helper/cloneDeep.js';
 
 let cached = null;
 
