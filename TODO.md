@@ -1,21 +1,15 @@
-
-# exp/react
+# 0.3.0
 - [ ] move html and css to src (eww, dist)
 - [ ] bugs:
   - [ ] calculate, then change qty, then recalculate: sometimes base buildings get weird sum
-
-
-# 0.2.0a
 - [ ] fill out README
-- [ ] allow top-level part quantities to be changed
-- [ ] optimization:
-  - [ ] use a map for allParts instead of find()
 - [ ] clean code:
   - [ ] wrap each part in a class to ensure Number() on getter, etc
     - [ ] or just process them on input
+  - [ ] model is just...messy
 
 
-# 0.3.0a
+# 0.4.0
 - [ ] Allow selection of alternate recipes
 - [ ] Optimize for base resource usage, based on alternate recipes
 - [ ] Support byproducts
