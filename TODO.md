@@ -1,4 +1,7 @@
 
+# exp/react
+- [ ] move html and css to src (eww, dist)
+
 
 # 0.2.0a
 - [ ] fill out README
