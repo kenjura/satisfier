@@ -1,6 +1,7 @@
 
 
 # 0.2.0a
+- [ ] fill out README
 - [ ] allow top-level part quantities to be changed
 - [ ] optimization:
   - [ ] use a map for allParts instead of find()
@@ -16,6 +17,7 @@
 
 
 # Some day
+- Tests?
 - Allow other forms of optimization (e.g. power, buildings, etc)
 - Allow selection of miner and logistic tech level
 - Draw diagram

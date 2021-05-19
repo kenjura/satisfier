@@ -16,8 +16,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Alclad Aluminum Sheet",
@@ -36,8 +35,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Alumina Solution",
@@ -56,8 +54,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Aluminum Ingot",
@@ -76,11 +73,10 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Foundry",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
-    "Recipe": "Aluminum Ingot (Pure)",
+    "Recipe": "Pure Aluminum Ingot",
     "Output": "Aluminum Ingot",
     "Output qty/min": "54",
     "Item 1": "Aluminum Scrap",
@@ -96,8 +92,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Smelter",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Aluminum Scrap",
@@ -116,8 +111,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "A.I. Limiter",
@@ -136,8 +130,7 @@ export default [
     "MW": "",
     "Stage": "3",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Automated Wiring",
@@ -156,8 +149,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Automated Speed Wiring",
@@ -176,8 +168,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Battery",
@@ -196,8 +187,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Beacon",
@@ -216,8 +206,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Black Powder",
@@ -236,8 +225,7 @@ export default [
     "MW": "",
     "Stage": "1",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Fine Black Powder",
@@ -256,8 +244,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Cable",
@@ -276,8 +263,7 @@ export default [
     "MW": "",
     "Stage": "3",
     "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Pure Caterium Ingot",
@@ -296,8 +282,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Caterium Ingot",
@@ -316,8 +301,7 @@ export default [
     "MW": "",
     "Stage": "1",
     "Building": "Smelter",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Circuit Board",
@@ -336,8 +320,7 @@ export default [
     "MW": "",
     "Stage": "3",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Silicon Circuit Board",
@@ -356,8 +339,7 @@ export default [
     "MW": "",
     "Stage": "3",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Caterium Circuit Board",
@@ -376,8 +358,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Compacted Coal",
@@ -396,8 +377,7 @@ export default [
     "MW": "",
     "Stage": "1",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Computer",
@@ -416,8 +396,7 @@ export default [
     "MW": "",
     "Stage": "4",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Crystal Computer",
@@ -436,8 +415,7 @@ export default [
     "MW": "",
     "Stage": "6",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Caterium Computer",
@@ -456,8 +434,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Concrete",
@@ -476,8 +453,7 @@ export default [
     "MW": "",
     "Stage": "1",
     "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Pure Copper Ingot",
@@ -496,8 +472,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Copper Alloy Ingot",
@@ -516,8 +491,7 @@ export default [
     "MW": "",
     "Stage": "1",
     "Building": "Foundry",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Copper Ingot",
@@ -536,8 +510,7 @@ export default [
     "MW": "",
     "Stage": "1",
     "Building": "Smelter",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Copper Sheet",
@@ -556,8 +529,7 @@ export default [
     "MW": "",
     "Stage": "2",
     "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Crystal Oscillator",
@@ -576,8 +548,7 @@ export default [
     "MW": "",
     "Stage": "5",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Infused Crystal Oscillator",
@@ -596,8 +567,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Empty Canister",
@@ -616,8 +586,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Encased Industrial Beam",
@@ -636,8 +605,7 @@ export default [
     "MW": "",
     "Stage": "3",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Encased Industrial Pipe",
@@ -656,8 +624,7 @@ export default [
     "MW": "",
     "Stage": "3",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Crude Oil",
@@ -676,8 +643,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Extractor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Crude Oil",
@@ -696,8 +662,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Extractor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Extractor - Water - normal",
@@ -716,8 +681,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Extractor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Extractor - Water - normal",
@@ -736,8 +700,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Extractor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Fuel",
@@ -756,8 +719,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Residual Fuel",
@@ -776,8 +738,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Unpackaged Fuel",
@@ -796,8 +757,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Packager",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Diluted Packaged Fuel",
@@ -816,8 +776,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Gas Filter",
@@ -836,8 +795,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Heat Sink",
@@ -856,8 +814,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Heavy Modular Frame",
@@ -876,8 +833,7 @@ export default [
     "MW": "",
     "Stage": "6",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Heavy Encased Frame",
@@ -896,8 +852,7 @@ export default [
     "MW": "",
     "Stage": "6",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Heavy Oil Residue",
@@ -916,8 +871,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "High-Speed Connector",
@@ -936,8 +890,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Iodine Infused Filter",
@@ -956,8 +909,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Iron Alloy Ingot",
@@ -976,8 +928,7 @@ export default [
     "MW": "",
     "Stage": "1",
     "Building": "Foundry",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Iron Ingot",
@@ -996,8 +947,7 @@ export default [
     "MW": "",
     "Stage": "1",
     "Building": "Smelter",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Iron Plate",
@@ -1016,8 +966,7 @@ export default [
     "MW": "",
     "Stage": "2",
     "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Iron Rod",
@@ -1036,28 +985,7 @@ export default [
     "MW": "",
     "Stage": "2",
     "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Iron Rod (OC 150%)",
-    "Output": "Iron Rod",
-    "Output qty/min": "22.5",
-    "Item 1": "Iron Ingot",
-    "Q1": "22.5",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "2",
-    "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Bauxite",
@@ -1076,8 +1004,7 @@ export default [
     "MW": "",
     "Stage": "0",
     "Building": "Miner",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Caterium Ore",
@@ -1096,8 +1023,7 @@ export default [
     "MW": "",
     "Stage": "0",
     "Building": "Miner",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Copper Ore",
@@ -1116,8 +1042,7 @@ export default [
     "MW": "",
     "Stage": "0",
     "Building": "Miner",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Iron Ore",
@@ -1136,8 +1061,7 @@ export default [
     "MW": "",
     "Stage": "0",
     "Building": "Miner",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Sulfur",
@@ -1156,8 +1080,7 @@ export default [
     "MW": "",
     "Stage": "0",
     "Building": "Miner",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Coal",
@@ -1176,8 +1099,7 @@ export default [
     "MW": "",
     "Stage": "0",
     "Building": "Miner",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Limestone",
@@ -1196,8 +1118,7 @@ export default [
     "MW": "",
     "Stage": "0",
     "Building": "Miner",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Modular Engine",
@@ -1216,8 +1137,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Modular Frame",
@@ -1236,8 +1156,7 @@ export default [
     "MW": "",
     "Stage": "5",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Bolted Frame",
@@ -1256,688 +1175,7 @@ export default [
     "MW": "",
     "Stage": "5",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Modular Frame (steeled)",
-    "Output": "Modular Frame",
-    "Output qty/min": "3",
-    "Item 1": "Reinforced Iron Plate",
-    "Q1": "2",
-    "Item 2": "Steel Pipe",
-    "Q2": "10",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "5",
-    "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Motor",
-    "Output": "Motor",
-    "Output qty/min": "5",
-    "Item 1": "Rotor",
-    "Q1": "10",
-    "Item 2": "Stator",
-    "Q2": "10",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "5",
-    "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Nobelisk",
-    "Output": "Nobelisk",
-    "Output qty/min": "3",
-    "Item 1": "Black Powder",
-    "Q1": "15",
-    "Item 2": "Steel Pipe",
-    "Q2": "30",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "3",
-    "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Quartz Crystal",
-    "Output": "Quartz Crystal",
-    "Output qty/min": "22.5",
-    "Item 1": "Raw Quartz",
-    "Q1": "37.5",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "1",
-    "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Quickwire",
-    "Output": "Quickwire",
-    "Output qty/min": "60",
-    "Item 1": "Caterium Ingot",
-    "Q1": "12",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "2",
-    "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Packaged Fuel",
-    "Output": "Packaged Fuel",
-    "Output qty/min": "40",
-    "Item 1": "Fuel",
-    "Q1": "40",
-    "Item 2": "Empty Canister",
-    "Q2": "40",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "",
-    "Building": "Packager",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Packaged Heavy Oil Residue",
-    "Output": "Packaged Heavy Oil Residue",
-    "Output qty/min": "30",
-    "Item 1": "Heavy Oil Residue",
-    "Q1": "30",
-    "Item 2": "Empty Canister",
-    "Q2": "30",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "",
-    "Building": "Packager",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Petroleum Coke",
-    "Output": "Petroleum Coke",
-    "Output qty/min": "120",
-    "Item 1": "Heavy Oil Residue",
-    "Q1": "40",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "",
-    "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Plastic",
-    "Output": "Plastic",
-    "Output qty/min": "20",
-    "Item 1": "Crude Oil",
-    "Q1": "30",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "Heavy Oil Residue",
-    "QB": "10",
-    "MW": "",
-    "Stage": "1",
-    "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Pure Iron Ingot",
-    "Output": "Iron Ingot",
-    "Output qty/min": "65",
-    "Item 1": "Iron Ore",
-    "Q1": "35",
-    "Item 2": "Water",
-    "Q2": "20",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "1",
-    "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Recycled Plastic",
-    "Output": "Plastic",
-    "Output qty/min": "60",
-    "Item 1": "Rubber",
-    "Q1": "30",
-    "Item 2": "Fuel",
-    "Q2": "30",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "",
-    "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Residual Plastic",
-    "Output": "Plastic",
-    "Output qty/min": "20",
-    "Item 1": "Polymer Resin",
-    "Q1": "60",
-    "Item 2": "Water",
-    "Q2": "20",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "",
-    "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Radio Control Unit",
-    "Output": "Radio Control Unit",
-    "Output qty/min": "2.5",
-    "Item 1": "Heat Sink",
-    "Q1": "10",
-    "Item 2": "Rubber",
-    "Q2": "40",
-    "Item 3": "Crystal Oscillator",
-    "Q3": "2.5",
-    "Item 4": "Computer",
-    "Q4": "2.5",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "",
-    "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Raw Quartz",
-    "Output": "Raw Quartz",
-    "Output qty/min": "60",
-    "Item 1": "",
-    "Q1": "",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "0",
-    "Building": "Miner",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Reinforced Iron Plate",
-    "Output": "Reinforced Iron Plate",
-    "Output qty/min": "5",
-    "Item 1": "Iron Plate",
-    "Q1": "30",
-    "Item 2": "Screw",
-    "Q2": "60",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "4",
-    "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Stitched Iron Plate",
-    "Output": "Reinforced Iron Plate",
-    "Output qty/min": "5.6",
-    "Item 1": "Iron Plate",
-    "Q1": "18.75",
-    "Item 2": "Wire",
-    "Q2": "37.5",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "3",
-    "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Reinforced Iron Plate (bolted)",
-    "Output": "Reinforced Iron Plate",
-    "Output qty/min": "15",
-    "Item 1": "Iron Plate",
-    "Q1": "90",
-    "Item 2": "Screw",
-    "Q2": "250",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "4",
-    "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Rifle Cartridge",
-    "Output": "Rifle Cartridge",
-    "Output qty/min": "15",
-    "Item 1": "Beacon",
-    "Q1": "3",
-    "Item 2": "Steel Pipe",
-    "Q2": "30",
-    "Item 3": "Black Powder",
-    "Q3": "30",
-    "Item 4": "Rubber",
-    "Q4": "30",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "",
-    "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Rotor",
-    "Output": "Rotor",
-    "Output qty/min": "4",
-    "Item 1": "Iron Rod",
-    "Q1": "20",
-    "Item 2": "Screw",
-    "Q2": "100",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "4",
-    "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Steel Rotor",
-    "Output": "Rotor",
-    "Output qty/min": "5",
-    "Item 1": "Steel Pipe",
-    "Q1": "10",
-    "Item 2": "Wire",
-    "Q2": "30",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "3",
-    "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Copper Rotor",
-    "Output": "Rotor",
-    "Output qty/min": "11.2",
-    "Item 1": "Copper Sheet",
-    "Q1": "22.5",
-    "Item 2": "Screw",
-    "Q2": "195",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "3",
-    "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Rubber",
-    "Output": "Rubber",
-    "Output qty/min": "20",
-    "Item 1": "Crude Oil",
-    "Q1": "30",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "Heavy Oil Residue",
-    "QB": "20",
-    "MW": "",
-    "Stage": "",
-    "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Recycled Rubber",
-    "Output": "Rubber",
-    "Output qty/min": "60",
-    "Item 1": "Plastic",
-    "Q1": "30",
-    "Item 2": "Fuel",
-    "Q2": "30",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "",
-    "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Residual Rubber",
-    "Output": "Rubber",
-    "Output qty/min": "20",
-    "Item 1": "Polymer Resin",
-    "Q1": "40",
-    "Item 2": "Water",
-    "Q2": "40",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "",
-    "Building": "Refinery",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Screw",
-    "Output": "Screw",
-    "Output qty/min": "40",
-    "Item 1": "Iron Rod",
-    "Q1": "10",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "3",
-    "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Steel Screw",
-    "Output": "Screw",
-    "Output qty/min": "260",
-    "Item 1": "Steel Beam",
-    "Q1": "5",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "3",
-    "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Cast Screw",
-    "Output": "Screw",
-    "Output qty/min": "50",
-    "Item 1": "Iron Ingot",
-    "Q1": "12.5",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "2",
-    "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Silica",
-    "Output": "Silica",
-    "Output qty/min": "37.5",
-    "Item 1": "Raw Quartz",
-    "Q1": "22.5",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "1",
-    "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Cheap Silica",
-    "Output": "Silica",
-    "Output qty/min": "26.25",
-    "Item 1": "Raw Quartz",
-    "Q1": "11.25",
-    "Item 2": "Limestone",
-    "Q2": "18.75",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "2",
-    "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Steel Beam",
-    "Output": "Steel Beam",
-    "Output qty/min": "15",
-    "Item 1": "Steel Ingot",
-    "Q1": "60",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "2",
-    "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Steel Ingot",
-    "Output": "Steel Ingot",
-    "Output qty/min": "45",
-    "Item 1": "Iron Ore",
-    "Q1": "45",
-    "Item 2": "Coal",
-    "Q2": "45",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "1",
-    "Building": "Foundry",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Steel Rod",
-    "Output": "Iron Rod",
-    "Output qty/min": "48",
-    "Item 1": "Steel Ingot",
-    "Q1": "12",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "2",
-    "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Solid Steel Ingot",
-    "Output": "Steel Ingot",
-    "Output qty/min": "60",
-    "Item 1": "Iron Ingot",
-    "Q1": "40",
-    "Item 2": "Coal",
-    "Q2": "40",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "2",
-    "Building": "Foundry",
-    "Current Output": "0",
-    "Current Input": "0"
-  },
-  {
-    "Recipe": "Steel Pipe",
-    "Output": "Steel Pipe",
-    "Output qty/min": "20",
-    "Item 1": "Steel Ingot",
-    "Q1": "30",
-    "Item 2": "",
-    "Q2": "",
-    "Item 3": "",
-    "Q3": "",
-    "Item 4": "",
-    "Q4": "",
-    "Byproduct": "",
-    "QB": "",
-    "MW": "",
-    "Stage": "2",
-    "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Steeled Frame",
@@ -1956,8 +1194,653 @@ export default [
     "MW": "",
     "Stage": "5",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Motor",
+    "Output": "Motor",
+    "Output qty/min": "5",
+    "Item 1": "Rotor",
+    "Q1": "10",
+    "Item 2": "Stator",
+    "Q2": "10",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "5",
+    "Building": "Assembler",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Nobelisk",
+    "Output": "Nobelisk",
+    "Output qty/min": "3",
+    "Item 1": "Black Powder",
+    "Q1": "15",
+    "Item 2": "Steel Pipe",
+    "Q2": "30",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "3",
+    "Building": "Assembler",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Quartz Crystal",
+    "Output": "Quartz Crystal",
+    "Output qty/min": "22.5",
+    "Item 1": "Raw Quartz",
+    "Q1": "37.5",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "1",
+    "Building": "Constructor",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Quickwire",
+    "Output": "Quickwire",
+    "Output qty/min": "60",
+    "Item 1": "Caterium Ingot",
+    "Q1": "12",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "2",
+    "Building": "Constructor",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Packaged Fuel",
+    "Output": "Packaged Fuel",
+    "Output qty/min": "40",
+    "Item 1": "Fuel",
+    "Q1": "40",
+    "Item 2": "Empty Canister",
+    "Q2": "40",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "",
+    "Building": "Packager",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Packaged Heavy Oil Residue",
+    "Output": "Packaged Heavy Oil Residue",
+    "Output qty/min": "30",
+    "Item 1": "Heavy Oil Residue",
+    "Q1": "30",
+    "Item 2": "Empty Canister",
+    "Q2": "30",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "",
+    "Building": "Packager",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Petroleum Coke",
+    "Output": "Petroleum Coke",
+    "Output qty/min": "120",
+    "Item 1": "Heavy Oil Residue",
+    "Q1": "40",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "",
+    "Building": "Refinery",
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Plastic",
+    "Output": "Plastic",
+    "Output qty/min": "20",
+    "Item 1": "Crude Oil",
+    "Q1": "30",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "Heavy Oil Residue",
+    "QB": "10",
+    "MW": "",
+    "Stage": "1",
+    "Building": "Refinery",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Pure Iron Ingot",
+    "Output": "Iron Ingot",
+    "Output qty/min": "65",
+    "Item 1": "Iron Ore",
+    "Q1": "35",
+    "Item 2": "Water",
+    "Q2": "20",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "1",
+    "Building": "Refinery",
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Recycled Plastic",
+    "Output": "Plastic",
+    "Output qty/min": "60",
+    "Item 1": "Rubber",
+    "Q1": "30",
+    "Item 2": "Fuel",
+    "Q2": "30",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "",
+    "Building": "Refinery",
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Residual Plastic",
+    "Output": "Plastic",
+    "Output qty/min": "20",
+    "Item 1": "Polymer Resin",
+    "Q1": "60",
+    "Item 2": "Water",
+    "Q2": "20",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "",
+    "Building": "Refinery",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Radio Control Unit",
+    "Output": "Radio Control Unit",
+    "Output qty/min": "2.5",
+    "Item 1": "Heat Sink",
+    "Q1": "10",
+    "Item 2": "Rubber",
+    "Q2": "40",
+    "Item 3": "Crystal Oscillator",
+    "Q3": "2.5",
+    "Item 4": "Computer",
+    "Q4": "2.5",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "",
+    "Building": "Manufacturer",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Raw Quartz",
+    "Output": "Raw Quartz",
+    "Output qty/min": "60",
+    "Item 1": "",
+    "Q1": "",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "0",
+    "Building": "Miner",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Reinforced Iron Plate",
+    "Output": "Reinforced Iron Plate",
+    "Output qty/min": "5",
+    "Item 1": "Iron Plate",
+    "Q1": "30",
+    "Item 2": "Screw",
+    "Q2": "60",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "4",
+    "Building": "Assembler",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Stitched Iron Plate",
+    "Output": "Reinforced Iron Plate",
+    "Output qty/min": "5.6",
+    "Item 1": "Iron Plate",
+    "Q1": "18.75",
+    "Item 2": "Wire",
+    "Q2": "37.5",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "3",
+    "Building": "Assembler",
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Bolted Iron Plate",
+    "Output": "Reinforced Iron Plate",
+    "Output qty/min": "15",
+    "Item 1": "Iron Plate",
+    "Q1": "90",
+    "Item 2": "Screw",
+    "Q2": "250",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "4",
+    "Building": "Assembler",
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Rifle Cartridge",
+    "Output": "Rifle Cartridge",
+    "Output qty/min": "15",
+    "Item 1": "Beacon",
+    "Q1": "3",
+    "Item 2": "Steel Pipe",
+    "Q2": "30",
+    "Item 3": "Black Powder",
+    "Q3": "30",
+    "Item 4": "Rubber",
+    "Q4": "30",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "",
+    "Building": "Manufacturer",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Rotor",
+    "Output": "Rotor",
+    "Output qty/min": "4",
+    "Item 1": "Iron Rod",
+    "Q1": "20",
+    "Item 2": "Screw",
+    "Q2": "100",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "4",
+    "Building": "Assembler",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Steel Rotor",
+    "Output": "Rotor",
+    "Output qty/min": "5",
+    "Item 1": "Steel Pipe",
+    "Q1": "10",
+    "Item 2": "Wire",
+    "Q2": "30",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "3",
+    "Building": "Assembler",
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Copper Rotor",
+    "Output": "Rotor",
+    "Output qty/min": "11.2",
+    "Item 1": "Copper Sheet",
+    "Q1": "22.5",
+    "Item 2": "Screw",
+    "Q2": "195",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "3",
+    "Building": "Assembler",
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Rubber",
+    "Output": "Rubber",
+    "Output qty/min": "20",
+    "Item 1": "Crude Oil",
+    "Q1": "30",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "Heavy Oil Residue",
+    "QB": "20",
+    "MW": "",
+    "Stage": "",
+    "Building": "Refinery",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Recycled Rubber",
+    "Output": "Rubber",
+    "Output qty/min": "60",
+    "Item 1": "Plastic",
+    "Q1": "30",
+    "Item 2": "Fuel",
+    "Q2": "30",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "",
+    "Building": "Refinery",
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Residual Rubber",
+    "Output": "Rubber",
+    "Output qty/min": "20",
+    "Item 1": "Polymer Resin",
+    "Q1": "40",
+    "Item 2": "Water",
+    "Q2": "40",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "",
+    "Building": "Refinery",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Screw",
+    "Output": "Screw",
+    "Output qty/min": "40",
+    "Item 1": "Iron Rod",
+    "Q1": "10",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "3",
+    "Building": "Constructor",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Steel Screw",
+    "Output": "Screw",
+    "Output qty/min": "260",
+    "Item 1": "Steel Beam",
+    "Q1": "5",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "3",
+    "Building": "Constructor",
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Cast Screw",
+    "Output": "Screw",
+    "Output qty/min": "50",
+    "Item 1": "Iron Ingot",
+    "Q1": "12.5",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "2",
+    "Building": "Constructor",
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Silica",
+    "Output": "Silica",
+    "Output qty/min": "37.5",
+    "Item 1": "Raw Quartz",
+    "Q1": "22.5",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "1",
+    "Building": "Constructor",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Cheap Silica",
+    "Output": "Silica",
+    "Output qty/min": "26.25",
+    "Item 1": "Raw Quartz",
+    "Q1": "11.25",
+    "Item 2": "Limestone",
+    "Q2": "18.75",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "2",
+    "Building": "Assembler",
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Steel Beam",
+    "Output": "Steel Beam",
+    "Output qty/min": "15",
+    "Item 1": "Steel Ingot",
+    "Q1": "60",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "2",
+    "Building": "Constructor",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Steel Ingot",
+    "Output": "Steel Ingot",
+    "Output qty/min": "45",
+    "Item 1": "Iron Ore",
+    "Q1": "45",
+    "Item 2": "Coal",
+    "Q2": "45",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "1",
+    "Building": "Foundry",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Steel Rod",
+    "Output": "Iron Rod",
+    "Output qty/min": "48",
+    "Item 1": "Steel Ingot",
+    "Q1": "12",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "2",
+    "Building": "Constructor",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Solid Steel Ingot",
+    "Output": "Steel Ingot",
+    "Output qty/min": "60",
+    "Item 1": "Iron Ingot",
+    "Q1": "40",
+    "Item 2": "Coal",
+    "Q2": "40",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "2",
+    "Building": "Foundry",
+    "Alternate": "yes"
+  },
+  {
+    "Recipe": "Steel Pipe",
+    "Output": "Steel Pipe",
+    "Output qty/min": "20",
+    "Item 1": "Steel Ingot",
+    "Q1": "30",
+    "Item 2": "",
+    "Q2": "",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "2",
+    "Building": "Constructor",
+    "Alternate": "no"
+  },
+  {
+    "Recipe": "Steeled Frame",
+    "Output": "Modular Frame",
+    "Output qty/min": "3",
+    "Item 1": "Reinforced Iron Plate",
+    "Q1": "2",
+    "Item 2": "Steel Pipe",
+    "Q2": "10",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "",
+    "QB": "",
+    "MW": "",
+    "Stage": "5",
+    "Building": "Assembler",
+    "Alternate": "yes"
   },
   {
     "Recipe": "Smart Plating",
@@ -1976,8 +1859,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Plastic Smart Plating",
@@ -1996,8 +1878,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Stator",
@@ -2016,8 +1897,7 @@ export default [
     "MW": "",
     "Stage": "3",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Quickwire Stator",
@@ -2036,8 +1916,7 @@ export default [
     "MW": "",
     "Stage": "3",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": ""
+    "Alternate": "yes"
   },
   {
     "Recipe": "Turbo Motor",
@@ -2056,8 +1935,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Versatile Framework",
@@ -2076,8 +1954,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Flexible Framework",
@@ -2096,8 +1973,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Manufacturer",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Packaged Water",
@@ -2116,8 +1992,7 @@ export default [
     "MW": "",
     "Stage": "",
     "Building": "Packager",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Fused Wire",
@@ -2136,8 +2011,7 @@ export default [
     "MW": "",
     "Stage": "2",
     "Building": "Assembler",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   },
   {
     "Recipe": "Wire",
@@ -2156,8 +2030,7 @@ export default [
     "MW": "",
     "Stage": "2",
     "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "no"
   },
   {
     "Recipe": "Caterium Wire",
@@ -2176,8 +2049,7 @@ export default [
     "MW": "",
     "Stage": "2",
     "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": ""
+    "Alternate": "yes"
   },
   {
     "Recipe": "Iron Wire",
@@ -2196,7 +2068,6 @@ export default [
     "MW": "",
     "Stage": "2",
     "Building": "Constructor",
-    "Current Output": "0",
-    "Current Input": "0"
+    "Alternate": "yes"
   }
 ]

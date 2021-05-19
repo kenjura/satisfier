@@ -1,7 +1,10 @@
 import allParts from '/data/parts.js';
 import cloneDeep from '/helper/cloneDeep.js';
 
+let cached = null;
+
 export default function getAllParts() {
+	if (cached) return cached;
 	const cloned = cloneDeep(allParts);
 	const mapped = cloned
 		.map(part =>  {
@@ -21,6 +24,6 @@ export default function getAllParts() {
 			if (b.Recipe > a.Recipe) return -1;
 			return 0;
 		});
-
+	cached = sorted;
 	return sorted;
 }
