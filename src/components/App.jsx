@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PartList from './PartList.jsx';
 import BuildingList from './BuildingList.jsx';
+import uid from '../helper/uid.js';
 
 let parts = [];
 let buildingList = [];
@@ -9,17 +10,21 @@ export default function App(props) {
 	let [ parts, setParts ] = useState([]);
 
 	return <div className="app">
-		<PartList parts={parts} addPart={addPart} />
+		<PartList />
 
 		<BuildingList buildingList={[]} />
+
+		<StateDump />
 	</div>
+}
 
-	function addPart() {
-		const newPart = { id:parts.length, Recipe:'', changePart };
-		setParts(parts.concat(newPart));
-	}
 
-	function changePart(a,b,c) {
-		console.log({a,b,c});
-	}
+
+
+import { useStore } from '../store';
+
+function StateDump() {
+	const state = useStore();
+
+	return <textarea readOnly width="400" value={ JSON.stringify(state) }></textarea>
 }
