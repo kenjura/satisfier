@@ -17,7 +17,7 @@ export default function App(props) {
 
 		<AlternateRecipeList />
 
-		<StateDump />
+		{/*<StateDump />*/}
 	</div>
 }
 

@@ -14,9 +14,7 @@
 - [ ] Improve it
 
 # Clean Code
-- [ ] fill out README
-- [ ] move html and css to src (eww, dist)
-- [ ] implement component-specific CSS
+- [ ] fill out README more
 - [ ] wrap each part in a class to ensure Number() on getter, etc
 	- [ ] or just process them on input
 - [ ] Clean up data (e.g. capital letters, weird field names)

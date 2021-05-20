@@ -1,6 +1,6 @@
 {
   "name": "satisfier",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "satisfactory game helper",
   "main": "src/index.js",
   "scripts": {
@@ -14,7 +14,11 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
     "babel-loader": "^8.1.0",
+    "css-loader": "^5.2.4",
     "react-hot-loader": "^4.13.0",
+    "sass": "^1.32.13",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.3.2",
     "webpack-cli": "^4.1.0",
     "webpack-dev-server": "^3.11.0"

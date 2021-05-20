@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import getAllParts from '../model/getAllParts';
 import { useStore } from '../store';
 
+import './AlternateRecipeList.scss';
+
 export default function AlternateRecipeList(props) {
 	const allParts = getAllParts();
 	const alternateParts = allParts.filter(part => part.alternate);

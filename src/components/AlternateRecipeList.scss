@@ -1,0 +1,15 @@
+
+#alternate-recipe-list {
+    position: fixed;
+    top: 0;
+    right: -40em;
+    background: #444;
+    height: 100vh;
+    overflow: auto;
+    padding: 1em;
+    width: 40em;
+    transition: right 0.3s;
+}
+#alternate-recipe-list:hover {
+    right: 0;
+}

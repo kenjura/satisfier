@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
 import { useStore } from '../store';
+import './Building.scss';
 
 
 export default function Building(props) {
