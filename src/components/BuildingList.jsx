@@ -10,6 +10,6 @@ export default function BuildingList(props) {
 	
 	return <div className="building-list">
 		<button onClick={calculate}>Calculate</button>
-		{ Object.entries(buildings).map(([k, building]) => <Building Recipe={building.Recipe} key={building.Recipe} />) }
+		{ Object.entries(buildings).map(([k, building]) => <Building recipe={building.recipe} key={building.recipe} />) }
 	</div>	
 }

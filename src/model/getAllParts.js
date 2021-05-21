@@ -7,7 +7,9 @@ let cached = {
 	alternateRecipes: null,
 };
 
-export function getAlternateRecipes() {
+export { getAlternateRecipes, getAllParts, getPart };
+
+function getAlternateRecipes() {
 	if (cached.alternateRecipes) return cached.alternateRecipes;
 	const allParts = getAllParts();
 	const alternateRecipes = allParts.filter(part => part.alternate);
@@ -15,15 +17,15 @@ export function getAlternateRecipes() {
 	return alternateRecipes;
 }
 
-export function getPart(Recipe) {
+function getPart(recipe) {
 	const map = getPartsMap();
-	return map[Recipe];
+	return map[recipe];
 }
 
 function createPartsMap(parts) {
 	const map = {};
 	parts.forEach(part => {
-		map[part.Recipe] = part;
+		map[part.recipe] = part;
 	})
 	return map;
 }
@@ -36,11 +38,12 @@ function getPartsMap() {
 	return map;
 }
 
-export default function getAllParts() {
+function getAllParts() {
 	if (cached.allParts) return cached.allParts;
 	const cloned = cloneDeep(allParts);
 	const mapped = cloned
 		.map(part =>  {
+			part.recipe = part.Recipe;
 			part['Output qty/min'] = Number(part['Output qty/min']);
 			part.Q1 = Number(part.Q1);
 			part.Q2 = Number(part.Q2);
@@ -54,8 +57,8 @@ export default function getAllParts() {
 		});
 	const sorted = mapped
 		.sort((a,b) => {
-			if (a.Recipe > b.Recipe) return 1;
-			if (b.Recipe > a.Recipe) return -1;
+			if (a.recipe > b.recipe) return 1;
+			if (b.recipe > a.recipe) return -1;
 			return 0;
 		});
 	cached.allParts = sorted;

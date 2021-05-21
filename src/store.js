@@ -5,11 +5,11 @@ import uid from './helper/uid';
 
 const useStore = create(set => ({
   parts: { 
-  	1234: { uid:1234, Recipe:'Computer', buildingQty:1 },
-  	4567: { uid:4567, Recipe:'Heavy Modular Frame', buildingQty:1 },
+  	1234: { uid:1234, recipe:'Computer', buildingQty:1 },
+  	4567: { uid:4567, recipe:'Heavy Modular Frame', buildingQty:1 },
   },
   addPart: newRecipe => set(state => {
-  	const newPart = { uid:uid(), Recipe:'', buildingQty:1 };
+  	const newPart = { uid:uid(), recipe:'', buildingQty:1 };
   	const newState = produce(state, draft => {
   		draft.parts[newPart.uid] = newPart;
   	});
@@ -17,7 +17,7 @@ const useStore = create(set => ({
   }),
   changePart: (uid, newRecipe) => set(state => {
   	const newState = produce(state, draft => {
-  		draft.parts[uid].Recipe = newRecipe;
+  		draft.parts[uid].recipe = newRecipe;
   	});
   	return newState;
   }),
@@ -33,8 +33,8 @@ const useStore = create(set => ({
   	});
   }),
   buildings: {
-  	'Heavy Modular Frames': { uid:123, Recipe:'Heavy Modular Frames', buildingQty:3 },
-  	'Computer': { uid:456, Recipe:'Computer', buildingQty:33 },
+  	'Heavy Modular Frames': { uid:123, recipe:'Heavy Modular Frames', buildingQty:3 },
+  	'Computer': { uid:456, recipe:'Computer', buildingQty:33 },
   },
   enabledAlts: { 'Heavy Encased Frame':true },
   setEnabledAlt: (recipe, value) => set(state => {

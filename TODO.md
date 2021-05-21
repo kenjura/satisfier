@@ -19,7 +19,8 @@
 	- [ ] or just process them on input
 - [ ] Clean up data (e.g. capital letters, weird field names)
 - [ ] model is just...messy
-	- [ ] no function should be default
-	- [ ] add helpers like getAlternateRecipes
+	- [x] no function should be default
+	- [x] add helpers like getAlternateRecipes
 	- [ ] digest data into clean property names, use those in all code
+- [ ] Use cleaner cache for getAllParts?
 - [ ] Tests?

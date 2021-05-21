@@ -4,6 +4,7 @@
 - [x] Removed debug textarea
 - [x] Inverted CHANGELOG.md
 - [x] Added basic README info
+- [x] replaced non-standed variable "Recipe" with "recipe" across the board
 
 # 0.3.0
 - [x] Allow selection of alternate recipes

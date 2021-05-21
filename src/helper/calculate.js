@@ -5,10 +5,6 @@ import uid from './uid';
 const alternateRecipes = getAlternateRecipes();
 
 export default function calculate(parts, enabledAlts) {
-	// parts.forEach(part => part.shoppingList = getShoppingList(part.Recipe, 1) );
-
-	// let buildingList = parts.map(part => Object.assign({}, part, getPart(part.Recipe)));
-	// let buildingList = cloneDeep(parts);
 	let buildingList = Object.values(cloneDeep(parts));
 
 	for (let depth = 0; depth < 10; depth++) {
@@ -16,28 +12,27 @@ export default function calculate(parts, enabledAlts) {
 		for (let [key, building] of Object.entries(buildingList)) {
 			if (building.processed) continue;
 
-			const part = getPart(building.Recipe);//allParts.find(part => part.Recipe === building.Recipe);
-			if (!part) throw new Error(`required part "${building.Recipe}" does not exist in dataset`);
+			const part = getPart(building.recipe);
+			if (!part) throw new Error(`required part "${building.recipe}" does not exist in dataset`);
 
 			const subParts = [
-				{ Recipe:part['Item 1'], outputQtyPerParentBuilding:Number(part['Q1']) },
-				{ Recipe:part['Item 2'], outputQtyPerParentBuilding:Number(part['Q2']) },
-				{ Recipe:part['Item 3'], outputQtyPerParentBuilding:Number(part['Q3']) },
-				{ Recipe:part['Item 4'], outputQtyPerParentBuilding:Number(part['Q4']) },
+				{ recipe:part['Item 1'], outputQtyPerParentBuilding:Number(part['Q1']) },
+				{ recipe:part['Item 2'], outputQtyPerParentBuilding:Number(part['Q2']) },
+				{ recipe:part['Item 3'], outputQtyPerParentBuilding:Number(part['Q3']) },
+				{ recipe:part['Item 4'], outputQtyPerParentBuilding:Number(part['Q4']) },
 			]
 
 			const parentBuildingQty = building.buildingQty;
 
 			subParts.forEach(sp => {
-				if (!sp.Recipe) return;
-				// const subPart = allParts.find(part => part.Recipe === sp.Recipe);
-				const subPart = getPart(sp.Recipe);
+				if (!sp.recipe) return;
+				const subPart = getPart(sp.recipe);
 				if (!subPart) return;
 
 				// is there a better part? check alt recipes
 				const altRecipes = alternateRecipes
 					.filter(recipe => recipe.Output === subPart.Output)
-					.filter(recipe => enabledAlts[recipe.Recipe]);
+					.filter(recipe => enabledAlts[recipe.recipe]);
 				const finalRecipe = altRecipes.length
 					? altRecipes.sort((a,b) => b.altScore - a.altScore)[0]
 					: subPart;
@@ -47,7 +42,7 @@ export default function calculate(parts, enabledAlts) {
 				const quantityOfSubPartBuildingsNeeded = quantityOfSubPartNeeded / quantityOfSubPartPerBuilding;
 
 				buildingList.push({
-					Recipe: finalRecipe.Recipe,
+					recipe: finalRecipe.recipe,
 					buildingQty: quantityOfSubPartBuildingsNeeded,
 				})
 			});
@@ -59,12 +54,12 @@ export default function calculate(parts, enabledAlts) {
 	// dedupe
 	let buildingListMap = {};
 	buildingList.forEach(building => {
-		buildingListMap[building.Recipe] = { Recipe:building.Recipe };
+		buildingListMap[building.recipe] = { recipe:building.recipe };
 	})
 	for (let buildingRecipe in buildingListMap) {
 		if (!buildingListMap.hasOwnProperty(buildingRecipe)) continue;
 
-		let buildingsWithRecipe = buildingList.filter(building => building.Recipe === buildingRecipe);
+		let buildingsWithRecipe = buildingList.filter(building => building.recipe === buildingRecipe);
 		let totalBuildingQty = buildingsWithRecipe.reduce((p,c) => c.buildingQty + p, 0);
 
 		buildingListMap[buildingRecipe].buildingQty = totalBuildingQty;

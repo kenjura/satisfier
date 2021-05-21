@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import getAllParts from '../model/getAllParts.js';
+import { getAllParts } from '../model/getAllParts.js';
 
 import { useStore } from '../store';
 
@@ -13,10 +13,10 @@ export default function Part(props) {
 	const changePartQuantity = useStore(state => state.changePartQuantity);
 
 	return <div className="part">part #{part.uid}
-		<select onChange={evt => changePart(props.uid, evt.target.value)} value={part.Recipe}>
+		<select onChange={evt => changePart(props.uid, evt.target.value)} value={part.recipe}>
 			<option>Choose a part</option>
 			{
-				allParts.map(p => <option key={p.Recipe+p['Output qty/min']}>{p.Recipe}</option>)
+				allParts.map(p => <option key={p.recipe+p['Output qty/min']}>{p.recipe}</option>)
 			}
 		</select>
 		<input type="number" default="1" min="0" value={part.buildingQty} onChange={evt => changePartQuantity(props.uid, evt.target.value)} />
