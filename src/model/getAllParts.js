@@ -47,6 +47,7 @@ export default function getAllParts() {
 			part.Q3 = Number(part.Q3);
 			part.Q4 = Number(part.Q4);
 			part.QB = Number(part.QB);
+			part.building = String(part.Building);
 			part.Stage = Number(part.Stage);
 			part.alternate = part.Alternate.toLowerCase() === 'yes';
 			part.altScore = Number(part['Alt Score']);

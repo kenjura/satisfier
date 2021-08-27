@@ -1,3 +1,6 @@
+# 0.5.0
+- [x] Added building type to UI (needs some UX love)
+
 # 0.4.0
 - [x] Added CSS and SASS loaders
 - [x] Moved component styles to their own scss files
