@@ -1,3 +1,6 @@
+# 0.5.2
+- [x] Fixed a very dumb error
+
 # 0.5.1
 - [x] Fixed merge conflict
 

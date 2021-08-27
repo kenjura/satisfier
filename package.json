@@ -1,6 +1,6 @@
 {
   "name": "satisfier",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "satisfactory game helper",
   "main": "src/index.js",
   "scripts": {

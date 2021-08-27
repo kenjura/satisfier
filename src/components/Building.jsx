@@ -6,7 +6,7 @@ import './Building.scss';
 
 export default function Building(props) {
 	const building = useStore(state => state.buildings[props.recipe]);
-	const part = getPart(building.Recipe) || {};
+	const part = getPart(building.recipe) || {};
 
 	if (!building) return <div className="building">unknown building "{props.recipe}"</div>
 
