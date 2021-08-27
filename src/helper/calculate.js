@@ -43,6 +43,7 @@ export default function calculate(parts, enabledAlts) {
 
 				buildingList.push({
 					recipe: finalRecipe.recipe,
+					building: finalRecipe.Building,
 					buildingQty: quantityOfSubPartBuildingsNeeded,
 				})
 			});

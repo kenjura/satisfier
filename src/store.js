@@ -5,8 +5,8 @@ import uid from './helper/uid';
 
 const useStore = create(set => ({
   parts: { 
-  	1234: { uid:1234, recipe:'Computer', buildingQty:1 },
-  	4567: { uid:4567, recipe:'Heavy Modular Frame', buildingQty:1 },
+  	1234: { uid:1234, recipe:'Computer', building:'Manufacturer', buildingQty:1 },
+  	4567: { uid:4567, recipe:'Heavy Modular Frame', building:'Manufacturer', buildingQty:1 },
   },
   addPart: newRecipe => set(state => {
   	const newPart = { uid:uid(), recipe:'', buildingQty:1 };
@@ -33,8 +33,8 @@ const useStore = create(set => ({
   	});
   }),
   buildings: {
-  	'Heavy Modular Frames': { uid:123, recipe:'Heavy Modular Frames', buildingQty:3 },
-  	'Computer': { uid:456, recipe:'Computer', buildingQty:33 },
+  	'Heavy Modular Frames': { uid:123, building:'Manufacturer', recipe:'Heavy Modular Frames', buildingQty:3 },
+  	'Computer': { uid:456, building:'Manufacturer', recipe:'Computer', buildingQty:33 },
   },
   enabledAlts: { 'Heavy Encased Frame':true },
   setEnabledAlt: (recipe, value) => set(state => {
