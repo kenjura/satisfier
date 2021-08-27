@@ -1,8 +1,10 @@
 # Features
+- [ ] Export a building list
+- [ ] Show input/output quantities
+- [ ] Round up building quantities to 2 digits
 - [ ] Support byproducts
 - [ ] Allow other forms of optimization (e.g. power, buildings, etc)
 - [ ] Allow selection of miner and logistic tech level
-- [ ] Allow selection of available buildings
 - [ ] Power analysis
 - [ ] Building diagram
 - [ ] User preferences (remember my tech level, buildings, alt recipes, etc) based on profile
