@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { RecoilRoot } from 'recoil';
 import PartList from './PartList.jsx';
 import AlternateRecipeList from './AlternateRecipeList.jsx';
 import BuildingList from './BuildingList.jsx';
@@ -10,15 +11,18 @@ let buildingList = [];
 export default function App(props) {
 	let [ parts, setParts ] = useState([]);
 
-	return <div className="app">
-		<PartList />
+	return (
+		<RecoilRoot>
+			<div className="app">
+				<PartList />
 
-		<BuildingList buildingList={[]} />
+				<BuildingList buildingList={[]} />
 
-		<AlternateRecipeList />
+				<AlternateRecipeList />
 
-		{/*<StateDump />*/}
-	</div>
+				{/*<StateDump />*/}
+			</div>
+		</RecoilRoot>);
 }
 
 
