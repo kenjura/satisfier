@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { RecoilRoot } from 'recoil';
+import React, { useEffect, useState } from "react";
+import { RecoilRoot, useRecoilSnapshot } from "recoil";
 import PartList from './PartList.jsx';
 import AlternateRecipeList from './AlternateRecipeList.jsx';
 import BuildingList from './BuildingList.jsx';
@@ -20,6 +20,8 @@ export default function App(props) {
 
 				<AlternateRecipeList />
 
+				<DebugObserver />
+
 				{/*<StateDump />*/}
 			</div>
 		</RecoilRoot>);
@@ -34,4 +36,15 @@ function StateDump() {
 	const state = useStore();
 
 	return <textarea readOnly width="400" value={ JSON.stringify(state) }></textarea>
+}
+
+function DebugObserver(): React.Node {
+  const snapshot = useRecoilSnapshot();
+  useEffect(() => {
+    console.debug("The following atoms were modified:");
+    for (const node of snapshot.getNodes_UNSTABLE({ isModified: true })) {
+      console.debug(node.key, snapshot.getLoadable(node));
+    }
+  }, [snapshot]);
+  return null;
 }
