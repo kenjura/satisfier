@@ -10,9 +10,10 @@ export default function Building(props) {
 
 	if (!building) return <div className="building">unknown building "{props.recipe}"</div>
 
-	return <div className="building">
-		<div className="building-recipe">{building.recipe}</div>
-		<div className="building-type">{part.building}</div>
-		<div className="building-qty">{building.buildingQty}</div>
-	</div>;
+	return <tr className="building">
+		<td className="building-qty">{building.buildingQty}</td>
+		<td className="building-recipe">{building.recipe}</td>
+		<td className="building-type">{part.building}</td>
+		<td className="building-output">{part.outputQty}</td>
+	</tr>;
 }

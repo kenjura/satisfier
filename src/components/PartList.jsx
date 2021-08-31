@@ -8,13 +8,15 @@ export default function PartList(props) {
 
 	const parts = useStore(state => state.parts);
 	const addPart = useStore(state => state.addPart);
+	const calculate = useStore(state => state.calculate);
 
 	return <div className="part-list">
-		<button onClick={addPart}>Add Part</button>
-		There are now {parts.length} parts in the list
  		{ 
  			Object.entries(parts).map(([k, part]) => <Part uid={part.uid} key={part.uid} />)
  		}
+		<button onClick={addPart}>Add Part</button>
+		<button onClick={calculate}>Calculate</button>
+
 
 	</div>	
 }

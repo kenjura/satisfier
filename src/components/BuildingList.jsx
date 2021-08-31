@@ -6,10 +6,18 @@ import { useStore } from '../store';
 export default function BuildingList(props) {
 	// const buildings = props.buildingList.map(building => Building(building)).join('');
 	const buildings = useStore(state => state.buildings);
-	const calculate = useStore(state => state.calculate);
 	
-	return <div className="building-list">
-		<button onClick={calculate}>Calculate</button>
-		{ Object.entries(buildings).map(([k, building]) => <Building recipe={building.recipe} key={building.recipe} />) }
-	</div>	
+	return <table className="building-list">
+		<thead>
+			<tr>
+				<th>Qty</th>
+				<th>Recipe</th>
+				<th>Building</th>
+				<th>Output/min</th>
+			</tr>
+		</thead>
+		<tbody>
+			{ Object.entries(buildings).map(([k, building]) => <Building recipe={building.recipe} key={building.recipe} />) }
+		</tbody>
+	</table>	
 }

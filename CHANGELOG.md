@@ -1,3 +1,8 @@
+# 0.6.0
+- BuildingList is now a table
+- Cleaned out debug text
+- It is now possible to remove a part from PartList
+
 # 0.5.2
 - [x] Fixed a very dumb error
 

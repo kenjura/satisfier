@@ -37,6 +37,12 @@ const useStore = create(set => ({
   	'Computer': { uid:456, building:'Manufacturer', recipe:'Computer', buildingQty:33 },
   },
   enabledAlts: { 'Heavy Encased Frame':true },
+  removePart: (uid) => set(state => {
+  	const newState = produce(state, draft => {
+  		delete draft.parts[uid];
+  	});
+  	return newState;
+  }),
   setEnabledAlt: (recipe, value) => set(state => {
     return produce(state, draft => {
       draft.enabledAlts[recipe] = value;

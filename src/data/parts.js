@@ -921,6 +921,26 @@ export default
     "Alt Score": "57.3"
   },
   {
+    "Recipe": "Electrode Aluminum Scrap",
+    "Output": "Aluminum Scrap",
+    "Output qty/min": "300",
+    "Item 1": "Alumina Solution",
+    "Q1": "180",
+    "Item 2": "Petroleum Coke",
+    "Q2": "60",
+    "Item 3": "",
+    "Q3": "",
+    "Item 4": "",
+    "Q4": "",
+    "Byproduct": "Water",
+    "QB": "105",
+    "MW": "",
+    "Stage": "5",
+    "Building": "Refinery",
+    "Alternate": "yes",
+    "Alt Score": "76.8"
+  },
+  {
     "Recipe": "Electrode Circuit Board",
     "Output": "Circuit Board",
     "Output qty/min": "5",

@@ -3,23 +3,16 @@
     border-radius: 3px;
     margin: 1em;
     padding: 1em;
-    position: relative;
     max-width: 40em;
     background: #345271;
 }
 
 .building-type {
-    display: inline-block;
     margin-left: 5em;
 }
 
 .building-qty {
-    display: inline-block;
-    position: absolute;
-    right: 1em;
-    /* font-weight: bold; */
 }
 
 .building-recipe {
-    display: inline-block;
 }

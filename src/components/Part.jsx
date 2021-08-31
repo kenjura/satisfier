@@ -11,8 +11,9 @@ export default function Part(props) {
 	const part = useStore(state => state.parts[props.uid]) || {};
 	const changePart = useStore(state => state.changePart);
 	const changePartQuantity = useStore(state => state.changePartQuantity);
+	const removePart = useStore(state => state.removePart);
 
-	return <div className="part">part #{part.uid}
+	return <div className="part">
 		<select onChange={evt => changePart(props.uid, evt.target.value)} value={part.recipe}>
 			<option>Choose a part</option>
 			{
@@ -20,5 +21,6 @@ export default function Part(props) {
 			}
 		</select>
 		<input type="number" default="1" min="0" value={part.buildingQty} onChange={evt => changePartQuantity(props.uid, evt.target.value)} />
-	-part</div>	
+		<button onClick={() => removePart(props.uid)}>remove part</button>
+	</div>	
 }
