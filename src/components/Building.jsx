@@ -14,6 +14,6 @@ export default function Building(props) {
 		<td className="building-qty">{building.buildingQty}</td>
 		<td className="building-recipe">{building.recipe}</td>
 		<td className="building-type">{part.building}</td>
-		<td className="building-output">{part.outputQty}</td>
+		<td className="building-output">{building.outputQty}</td>
 	</tr>;
 }

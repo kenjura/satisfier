@@ -45,6 +45,7 @@ export default function calculate(parts, enabledAlts) {
 					recipe: finalRecipe.recipe,
 					building: finalRecipe.Building,
 					buildingQty: quantityOfSubPartBuildingsNeeded,
+					outputQty: subPart['Output qty/min'] * quantityOfSubPartBuildingsNeeded,
 				})
 			});
 
@@ -62,8 +63,10 @@ export default function calculate(parts, enabledAlts) {
 
 		let buildingsWithRecipe = buildingList.filter(building => building.recipe === buildingRecipe);
 		let totalBuildingQty = buildingsWithRecipe.reduce((p,c) => c.buildingQty + p, 0);
+		let totalOutputQty = buildingsWithRecipe.reduce((p,c) => c.outputQty + p, 0);
 
 		buildingListMap[buildingRecipe].buildingQty = totalBuildingQty;
+		buildingListMap[buildingRecipe].outputQty = totalOutputQty;
 
 		buildingListMap[buildingRecipe].uid = uid();
 	}
