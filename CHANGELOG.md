@@ -1,3 +1,6 @@
+# 0.7.0
+- Added output qty / min (except for target buildings)
+
 # 0.6.0
 - BuildingList is now a table
 - Cleaned out debug text
